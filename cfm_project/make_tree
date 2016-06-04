@@ -1,0 +1,1 @@
+ tree -L 3 -I '*.pyc|*~|migrations|_*|media' >> tree.txt

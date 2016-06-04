@@ -1,0 +1,14 @@
+{% comment %}
+	ano_escolar/templates/ano_escolar/index.html
+{% endcomment %}
+
+{% if anuarios %}
+	<ul>
+	{% for anuario in anuarios %}
+		<li><a href="/ano_escolar/{{ anuario.id }}/">{{ anuario.anuario_text }}</a></li>
+	{% endfor %}
+	</ul>
+{% else %}
+		<p>No polls are available.</p>
+{% endif %}
+
